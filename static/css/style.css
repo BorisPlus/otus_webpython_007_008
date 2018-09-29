@@ -1,0 +1,97 @@
+/* http://paletton.com/#uid=10q0u0kllll7dvDehquspgcFnb2 */
+body, html{
+    margin:0;
+    padding:0;
+    background-color: #FCDBC3;
+
+}
+div.header{
+    margin:0;
+    padding: 14px;
+    background-color: #D39C75;
+    color:  #582400;
+}
+div.content{
+    margin:0;
+    padding: 14px;
+    color:  #582400;
+}
+
+ul {
+}
+
+ul li {
+}
+
+ul.navigation li:last-child {
+    border-right: none;
+}
+
+ul li a {
+    display: block;
+    color: #813E0F;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover, ul li a.checked {
+    background-color: #813E0F;
+    color: #FCDBC3;
+}
+
+
+ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #813E0F;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+ul.navigation li {
+    float: left;
+    border-right:1px solid #FCDBC3;
+}
+
+ul.navigation li:last-child {
+    border-right: none;
+}
+
+ul.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navigation li a:hover:not(.active), ul.navigation li a.checked {
+    background-color: #582400;
+}
+
+.active {
+    background-color: #1D6C0C;
+    border-left:1px dashed #FCDBC3;
+}
+
+.footer {
+    flex: 0 0 auto;
+    border-top:1px solid #582400;
+    width: 100%;
+    background-color: #D39C75;
+    color:  #582400;
+    text-align: right;
+    margin-right: 3;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}
