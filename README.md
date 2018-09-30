@@ -7,21 +7,27 @@
 * Страница имеет меню, разделенное на общее (слева) и клиентское (справа).
 * Меню движется с прокруткой
 * Низ страницы снизу
+* черный текст на светло коричневом
+* шрифт кастомный через api google
+* иконки у списка
 
 ## Вопросы
 
-* как сузить верх страницы, я про то, что до меню?
-* как расширить снизу _div.footer_ и отступить немного справа
+* правильно ли _div.footer_ в style организован?
 
 ## Cкриншоты
 
-Страница:
+Демонстрация подсветки меню:
 
 ![index](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/index.png "Title")
 
-Демонстрация подсветки меню, его привязки к прокрутке и низ страницы:
+Демонстрация привязки меню к прокрутке:
 
-![index_feature](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/index_feature.png "Title")
+![index_feature](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/index_scrolled_with_menu.png "Title")
+
+Низ страницы всегда снизу:
+
+![index_feature](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/empty.png "Title")
 
 ## Авторы
 
