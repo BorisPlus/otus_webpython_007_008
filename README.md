@@ -18,17 +18,20 @@
 
 ## Cкриншоты
 
-Демонстрация подсветки меню:
+### Демонстрация подсветки меню:
 
 ![index](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/index.png "Title")
 
-Демонстрация привязки меню к прокрутке:
+
+### Демонстрация привязки меню к прокрутке:
 
 ![index_feature](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/index_scrolled_with_menu.png "Title")
 
-Низ страницы всегда снизу:
+
+### Низ страницы всегда снизу:
 
 ![index_feature](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/empty.png "Title")
+
 
 ## Авторы
 
