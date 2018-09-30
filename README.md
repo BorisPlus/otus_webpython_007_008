@@ -10,11 +10,16 @@
 * черный текст на светло коричневом
 * шрифт кастомный через api google
 * иконки у списка
-
+* максимально отвязал классы от тегов в div content
+* селектор на потомков содержит класс потомка
+* строки в главной области укоротил за счет 18px шрифта, узкая область мне не нравится
+* сделал переопределение для узкого экрана
+* коричневый на коричневом — только в заголовке и только лого, но с черной обводкой. мне так нравится
+ 
 ## Вопросы
 
-* правильно ли _div.footer_ в style организован?
-* если браузер не раскрывать на весь экран, то меню НЕ идет со скролом до самого конца вниз? то есть, есть период, когда меню перестает идти вниз и начинает скрываться наверху.
+* правильно ли _div.footer_ в style организован? может можно что погибче, <footer> я не осилил.
+* если браузер не раскрывать на весь экран, то меню НЕ идет со скролом до самого конца вниз? то есть, есть период, когда меню перестает идти вниз и начинает скрываться наверху. .wrapper-а нет больше, а поведение меню осталось
 
 ## Cкриншоты
 
@@ -25,12 +30,16 @@
 
 ### Демонстрация привязки меню к прокрутке:
 
-![index_feature](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/index_scrolled_with_menu.png "Title")
+![index_slider](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/index_scrolled_with_menu.png "Title")
 
 
 ### Низ страницы всегда снизу:
 
-![index_feature](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/empty.png "Title")
+![index_bottom](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/empty.png "Title")
+
+### Переопределение при узком экране:
+
+![narrow_monitor](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/narrow_monitor.png "Title")
 
 
 ## Авторы
