@@ -76,7 +76,7 @@ html, body {
 /* content */
 .content {
     min-height: calc(100vh - 187px);
-    font-size: 18px;
+    font-size: 24px;
     margin: 0;
     padding: 14px;
     color: #000;
