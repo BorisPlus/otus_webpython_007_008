@@ -16,11 +16,6 @@
 * сделал переопределение для узкого экрана
 * коричневый на коричневом — только в заголовке и только лого, но с черной обводкой. мне так нравится
  
-## Вопросы
-
-* правильно ли _div.footer_ в style организован? может можно что погибче, <footer> я не осилил.
-* если браузер не раскрывать на весь экран, то меню НЕ идет со скролом до самого конца вниз? то есть, есть период, когда меню перестает идти вниз и начинает скрываться наверху. .wrapper-а нет больше, а поведение меню осталось
-
 ## Cкриншоты
 
 ### Демонстрация подсветки меню:
@@ -28,12 +23,12 @@
 ![index](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/index.png "Title")
 
 
-### Демонстрация привязки меню к прокрутке:
+### Демонстрация привязки меню к прокрутке до самого низа страницы:
 
 ![index_slider](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/index_scrolled_with_menu.png "Title")
 
 
-### Низ страницы всегда снизу:
+### Низ страницы всегда снизу даже при пустой странице:
 
 ![index_bottom](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/empty.png "Title")
 
