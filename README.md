@@ -30,7 +30,7 @@
 
 ### Низ страницы всегда снизу даже при пустой странице:
 
-![index_bottom](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/empty.png "Title")
+![empty](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/empty.png "Title")
 
 ### Переопределение при узком экране:
 
