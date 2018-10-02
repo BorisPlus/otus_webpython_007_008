@@ -1,7 +1,6 @@
 /* http://paletton.com/#uid=10q0u0kllll7dvDehquspgcFnb2 */
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 html, body {
-    height: 100%;
     margin: 0 0;
     padding: 0 0;
     background-color: #FCDBC3;
@@ -16,6 +15,10 @@ html, body {
     padding: 14px;
     background-color: #D39C75;
 }
+.header * {
+    margin: 0;
+    padding: 0;
+}
 .header .header_text {
     display: inline-block;
     color: #000;
@@ -25,12 +28,12 @@ html, body {
     color: #582400;*/
 }
 .header .header_img {
-    padding: 0 0 0 30px;
-    display: inline-block;
-}
-.header * {
     margin: 0;
     padding: 0;
+    display: inline-block;
+    position: absolute;
+    top:    15px;
+    right: 10px;
 }
 /* navigation */
 .navigation {
@@ -106,7 +109,6 @@ html, body {
 }
 /* footer */
 .footer {
-    height: 20px;
     border-top: 1px solid #582400;
     width: 100%;
     background-color: #D39C75;
@@ -148,6 +150,8 @@ html, body {
     }
     .header .header_img {
         clear: both;
+        padding: 0;
+        position: static;
     }
     .navigation {
         height:auto !important;
