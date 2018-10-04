@@ -56,29 +56,29 @@
 
 Нажимаем "сюда"
 
-![index](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/click.png "Title")
+![index](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/click.png "Title")
 
 #### Приветсвенное сообщение режима BugReport:
 
 "А теперь выделите то, что Вы считаете ошибкой."
 
-![first_message](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/first_message.png "Title")
+![first_message](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/first_message.png "Title")
 
 #### Выделяете мышкой:
 
-![mark](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/mark.png "Title")
+![mark](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/mark.png "Title")
 
 Автоматически после отпускания мыши появится окно
 
-![promt](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/promt.png "Title")
+![promt](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/promt.png "Title")
 
 #### Введите дополнительные данные:
 
-![promt_input](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/promt_input.png "Title")
+![promt_input](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/promt_input.png "Title")
 
 #### Крайнее сообщение режима BugReport:
 
-![last_message](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/last_message.png "Title")
+![last_message](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/last_message.png "Title")
 
 ## Авторы
 
