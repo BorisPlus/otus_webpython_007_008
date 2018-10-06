@@ -1,32 +1,30 @@
-message_of_start = 'А теперь выделите то, что Вы считаете ошибкой. '
-start = function(){
-    if (document.body.style.cursor == "pointer") {
-
-        document.body.style.cursor = "default";
-    } else {
-        document.body.style.cursor = "pointer";
-        alert(message_of_start);
+class BugReport {
+    static set_message(text){
+        var bug_report_area = document.getElementById("bug_report_message");
+        bug_report_area.innerHTML = text;
     }
-}
-get = function(){
-    if (document.body.style.cursor == "pointer") {
-        selected_text = window.getSelection().toString();
-        if (selected_text){
-            debug_message = window.location.href + '\n\n ' +  selected_text
-            debug_message += '\n\n Поясните дополнительно и укажите контактные данные, если хотите.'
-            var prompted = prompt(debug_message, "");
-            if (prompted !== null) {
-
-                // здесь должно быть то, что отправит данные на сервер
-
-
-                document.body.style.cursor = "default";
-                alert('Благодарю Вас!');
+    static get_report(event){
+        if (event.altKey) {
+            var selected_text = window.getSelection().toString();
+            if (selected_text){
+                var message = window.location.href +
+                              '\n\n ' +
+                              selected_text +
+                              '\n\n ' +
+                              'Поясните дополнительно и укажите контактные данные, если хотите.'
+                var prompted = prompt(message, "");
+                if (prompted != null) {
+                    BugReport.set_message('Благодарю Вас!')
+                    // honest send: message + user_message
+                } else {
+                    // force send of uncertain user unprompted message : message + user_message
+                }
             }
-
         }
+
     }
 }
-function load_bug_report_stuff() {
-    document.body.onmouseup = get;
-}
+window.onload = function() {
+    document.body.onmouseup = BugReport.get_report;
+};
+
