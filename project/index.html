@@ -4,11 +4,6 @@
     <meta charset="utf-8">
     <link type="text/css" href="./static/css/style.css" rel="stylesheet"/>
     <script src="./static/js/bug_report.js"></script>
-    <script>
-        window.onload = function() {
-            load_bug_report_stuff()
-        };
-    </script>
     <title>Аппликатура</title>
 </head>
 <body>
@@ -81,8 +76,8 @@
     </div>
 
     <div class="additional_content">
-        <h3>Если нашли ошибку:</h3>
-        <p> нажмите <a class='content_link' id="error_report" onmousedown="start()">сюда</a> и выделите область</p>
+        <p>Если нашли ошибку, выделите текст и щелкните мышкой, зажав клавишу <font class="attention">Alt</font>.</p>
+        <p id="bug_report_message" align="right"></p>
         <h3>Популярные разделы:</h3>
         <ul class="notes">
             <li class="note"><a class='link' href="#home">Аккорды для гитары</a></li>
