@@ -52,33 +52,23 @@
 
 ### Результаты ДЗ занятия 15
 
-#### Демонстрация начала режима BugReport:
+#### Сообщение о работе BugReport:
 
-Нажимаем "сюда" (можно сделать кнопочку On\Off, но сути не меняет)
+см. "Если нашли ошибку, выделите текст и щелкните мышкой, зажав клавишу Alt."
 
-![index](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/click.png "Title")
+![about](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/about.png "Title")
 
-#### Приветсвенное сообщение режима BugReport:
-
-"А теперь выделите то, что Вы считаете ошибкой."
-
-![first_message](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/first_message.png "Title")
-
-#### Выделяете мышкой:
+#### Выделите мышкой:
 
 ![mark](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/mark.png "Title")
 
-Автоматически после отпускания мыши появится окно
+#### Зажмите клавишу Alt и щелкните мышкой по ранее выделенному:
 
 ![promt](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/promt.png "Title")
 
-#### Введите дополнительные данные:
+#### Благодарственное сообщение:
 
-![promt_input](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/promt_input.png "Title")
-
-#### Крайнее сообщение режима BugReport:
-
-![last_message](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/last_message.png "Title")
+![thanks_message](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/thanks_message.png "Title")
 
 ## Авторы
 
