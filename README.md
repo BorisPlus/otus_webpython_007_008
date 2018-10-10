@@ -56,9 +56,9 @@
 
 см. "Если нашли ошибку, выделите текст и нажмите на кнопку."
 
-![bag_report_narrow_monitor](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/bag_report_narrow_monitor.png "Title")
+![bag_report_narrow_monitor](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/bag_report.png "Title")
 
-![narrow_monitor](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/narrow_monitor.png "Title")
+![narrow_monitor](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/bag_report_narrow_monitor.png "Title")
 
 
 #### Выделите мышкой:
@@ -68,8 +68,6 @@
 ![mark_narrow_monitor](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/mark_narrow_monitor.png "Title")
 
 #### Нажмите кнопку и заполните форму по желанию:
-
-![promt](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/promt.png "Title")
 
 ![promt_narrow_monitor](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/promt_narrow_monitor.png "Title")
 
