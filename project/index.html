@@ -3,7 +3,10 @@
 <head>
     <meta charset="utf-8">
     <link type="text/css" href="./static/css/style.css" rel="stylesheet"/>
+
+    <link type="text/css" href="./static/css/bug_report.css" rel="stylesheet"/>
     <script src="./static/js/bug_report.js"></script>
+
     <title>Аппликатура</title>
 </head>
 <body>
@@ -76,8 +79,11 @@
     </div>
 
     <div class="additional_content">
-        <p>Если нашли ошибку, выделите текст и щелкните мышкой, зажав клавишу <font class="attention">Alt</font>.</p>
-        <p id="bug_report_message" align="right"></p>
+        <div id="bug_report">
+            Если нашли ошибку, выделите текст и нажмите на кнопку ниже.
+            <div id="bug_report_button_area"><button id="bug_report_button">Я нашел</button></div>
+            <div id="bug_report_message_area"></div>
+        </div>
         <h3>Популярные разделы:</h3>
         <ul class="notes">
             <li class="note"><a class='link' href="#home">Аккорды для гитары</a></li>
