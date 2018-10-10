@@ -69,6 +69,8 @@
 
 #### Нажмите кнопку и заполните форму по желанию:
 
+![promt](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/promt.png "Title")
+
 ![promt_narrow_monitor](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/promt_narrow_monitor.png "Title")
 
 #### Благодарность:
