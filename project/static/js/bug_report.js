@@ -15,9 +15,9 @@ class BugReport {
     }
     static getReport(event){
         var selectedText = window.getSelection().toString();
-        if !(selectedText){
-            return
-        }
+
+        if !(selectedText) return
+
         var message = window.location.href +
                       '\n\n ' +
                       selectedText +
