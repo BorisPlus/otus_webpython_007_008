@@ -25,7 +25,7 @@
 Механизм формирования сообщения BugReport и как будто отправляются:
 * адрес страницы
 * выделенный пользователем текст
-* его дополнительный комментарий
+* дополнительный комментарий пользователя
 
 ## Cкриншоты
 
@@ -54,21 +54,32 @@
 
 #### Сообщение о работе BugReport:
 
-см. "Если нашли ошибку, выделите текст и щелкните мышкой, зажав клавишу Alt."
+см. "Если нашли ошибку, выделите текст и нажмите на кнопку."
 
-![about](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/about.png "Title")
+![bag_report_narrow_monitor](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/bag_report_narrow_monitor.png "Title")
+
+![narrow_monitor](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/narrow_monitor.png "Title")
+
 
 #### Выделите мышкой:
 
 ![mark](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/mark.png "Title")
 
-#### Зажмите клавишу Alt и щелкните мышкой по ранее выделенному:
+![mark_narrow_monitor](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/mark_narrow_monitor.png "Title")
+
+#### Нажмите кнопку и заполните форму по желанию:
 
 ![promt](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/promt.png "Title")
 
-#### Благодарственное сообщение:
+![promt_narrow_monitor](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/promt_narrow_monitor.png "Title")
 
-![thanks_message](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/thanks_message.png "Title")
+#### Благодарность:
+
+![thanks_message](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/thanks.png "Title")
+
+![thanks_message](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/thanks_narrow_monitor.png "Title")
+
+через 3 секунды все вернется обратно, а выделение останется.
 
 ## Авторы
 
