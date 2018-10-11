@@ -7,7 +7,7 @@ class BugReport {
         if (style == 'normal'){
             bugReportButtonArea.style.display = 'block';
             bugReportTextArea.className = "bug_report_text_normal";
-            return
+            return;
         }
         bugReportButtonArea.style.display = 'none';
         bugReportTextArea.className = "bug_report_text_thanks";
@@ -15,7 +15,7 @@ class BugReport {
     }
     static getReport(event){
         var selectedText = window.getSelection().toString();
-        if !(selectedText) return
+        if (!selectedText) return;
         var message = window.location.href +
                       '\n\n ' +
                       selectedText +
@@ -25,7 +25,7 @@ class BugReport {
         if (user_prompt != null) {
             BugReport.setMessage('Благодарю Вас!');
             BugReport.sendReport(message + ':' + user_prompt, true); // honest send: message + user_prompt
-            return
+            return;
         }
         // force send of uncertain user unprompted message : message + user_message
         BugReport.sendReport(message, false);
