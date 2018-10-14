@@ -30,6 +30,17 @@
 * ООП
 * кнопка, универсально
 
+### Результаты ДЗ занятия 17 (Расписание JavaScript)
+
+Режим просмотра доп данных карточек музыкальных инструментов. Если навести, то увеличится карточка. 
+Если щелкнуть, то поверх всего нарисуется область (пока полупустая).
+Если на область щелкнуть, то закроется.
+
+Чего нет: 
+* щелкание другого инструмента не приводит к закрытию допинформации по предыдущему, доп инфа как бы наслаивается.
+Это можно переделать, но времени нет.
+* можно навесить на щелкание вне области доп.информации закрытие всех доп.информаций
+
 ## Cкриншоты
 
 ### Результаты ДЗ занятия 13
@@ -83,6 +94,22 @@
 ![thanks_message](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_015/thanks_narrow_monitor.png "Title")
 
 через 3 секунды все вернется обратно, а выделение останется.
+
+### Результаты ДЗ занятия 17
+
+#### Список инструментов
+
+![instruments](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_017/instruments.png "Title")
+
+#### Навели на инструмент
+
+![instrument_hover](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_017/instrument_hover.png "Title")
+
+#### Щелкнули на инструмент
+
+Появившаяся область закроется, если в любом месте щелкнуть на эту облать доп. информации
+
+![instrument_clicked](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_017/instrument_clicked.png "Title")
 
 ## Авторы
 

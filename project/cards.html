@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru" class="no-js no-touch ">
+<head>
+    <meta charset="utf-8">
+    <link type="text/css" href="./static/css/style.css" rel="stylesheet"/>
+    <link type="text/css" href="./static/css/bug_report.css" rel="stylesheet"/>
+    <link type="text/css" href="./static/css/cards.css" rel="stylesheet"/>
+
+    <script src="./static/js/bug_report.js"></script>
+    <script src="./static/js/card_loader.js"></script>
+
+    <title>Аппликатура</title>
+</head>
+<body>
+
+<div class="header">
+    <div class="header_text">
+        <h1 class="project_name">Аппликатура</h1>
+        <p>Умение разрабатывать аппликатуру — важная составляющая мастерства исполнителя </p>
+    </div>
+    <div class="header_img">
+        <img height="60" src="./static/img/a.png">
+    </div>
+</div>
+
+<div class="navigation">
+    <ul>
+        <li><a href="#home" class="checked">Главная</a></li>
+        <li><a href="#news">Новости</a></li>
+        <li><a href="#blocks">Разделы</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+        <li style="float:right"><a class="active" href="#about">Личный кабинет</a></li>
+    </ul>
+</div>
+
+<div class="content">
+
+
+    <div class="main_content">
+        <div class="full_cards">
+            <div class="full_card" id="guitar_card_full_card">
+                <div class="full_card_text">
+                    <b>Гита́ра</b> — струнный щипковый музыкальный инструмент.<br><br>
+                    Применяется в качестве аккомпанирующего или сольного инструмента во многих стилях и направлениях
+                        музыки, среди которых романс, блюз, кантри, фламенко, рок, джаз. Изобретённая в
+                        XX веке электрическая гитара произвела значительные изменения в музыке и тем самым
+                        оказала сильное влияние на массовую культуру.
+                </div>
+            </div>
+            <div class="full_card" id="ukulele_card_full_card">
+                <div class="full_card_text">
+                    <b>Укуле́ле</b> (гав. <i>ʻukulele</i> — скачущая блоха) — четырёхструнный щипковый музыкальный инструмент,
+                    разновидность гитары.<br><br>
+                    Используется для аккордового сопровождения при исполнении песен, реже для игры соло.
+                </div>
+            </div>
+            <div class="full_card" id="dechig_pondar_card_full_card">
+                <div class="full_card_text">
+                    <b>Дечиг по́ндар</b> (<i>по́ндур</i>) — древний национальный инструмент вайнахов — чеченцев и ингушей.<br><br>
+                    Трёххорный щипковый музыкальный инструмент, распространенный у народов Кавказа. С появлением
+                    аккордеона («Кехат-пондар»), в народе пондару также дают имя «дечиг-пондар».<br>
+                    Близок по конструкции к дагестанскому агач-кумузу.
+                </div>
+            </div>
+        </div>
+        <h2>Аккорды</h2>
+        <div class="cards">
+            <div class="card" id="guitar_card">
+                <img src="static/img/cards/guitar.svg.png"/>
+                Гитара
+                <p class="card_text">
+                    Список аккордов, обязательных к изучению. Научитесь уверенно их ставить и не путать.
+                </p>
+            </div>
+
+            <div class="card" id="ukulele_card">
+                <img src="static/img/cards/ukulele.svg.png"/>
+                Укуле́ле
+                <p class="card_text">
+                    Начните с изучения этих аккордов. Их вполне достаточно, чтоб весело побрынчать :)
+                </p>
+            </div>
+
+            <div class="card" id="dechig_pondar_card">
+                <img src="static/img/cards/dechig_pondar.svg.png"/>
+                Дечиг по́ндар (по́ндур)
+                <p class="card_text">
+                    Что я знаю о нем? Практически ничего. Но его звук весьма этнический, твердый, звонкий.
+                </p>
+            </div>
+
+            <div class="card" id="question_card">
+                Есть предложения?
+                <img src="static/img/cards/question.svg.png"/>
+                <p class="card_text">
+                    Вы возможно владеете очень интересным струнно-щипковым музыкальным инструментом и хотели бы видеть
+                    аккорды его здесь. Я только за. Я дам вам административный доступ, и вы через конструктор аккордов
+                    попробуете их сгенерировать.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="additional_content">
+        <div id="bug_report">
+            <div id="bug_report_text_area">Если нашли ошибку, выделите текст и нажмите на кнопку.</div>
+            <div id="bug_report_button_area">
+                <button id="bug_report_button">Я нашел ошибку</button>
+            </div>
+        </div>
+        <h3>Популярные разделы:</h3>
+        <ul class="notes">
+            <li class="note"><a class='link' href="#home">Аккорды для гитары</a></li>
+            <li class="note"><a class='link' href="#news">Аккорды для укулёле</a></li>
+        </ul>
+        <h3>Рекомендуемые материалы и истонки:</h3>
+        <ul class="notes">
+            <li class="note">
+                <a class='link' href="https://amdm.ru/">AmDm.ru</a> российский портал для музыкантов
+            </li>
+            <li class="note">
+                <a class='link' href="https://mychords.net/">MyChords.net (Hm6.ru)</a> аккорды песен под гитару
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="footer">
+    applicatura.ru ©
+</div>
+</body>
+</html>

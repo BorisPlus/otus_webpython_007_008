@@ -85,6 +85,7 @@ html, body {
     margin: 0;
     padding: 14px;
     color: #000;
+    display: inline-block;
 }
 .content .content_link {
     font-weight: bold;
@@ -182,7 +183,8 @@ html, body {
     .content {
         min-height: auto !important;
         height: auto !important;
-        width: 80%;
+        width: 95%;
+        /*text-align:center;*/
         margin: auto;
         padding: auto;
         font-size: 16px;
@@ -190,13 +192,14 @@ html, body {
     .content .main_content {
         display: block;
         width: 100%;
-        margin: auto;
         padding: 0;
+        margin: 5px auto;
     }
     .content .additional_content{
+        margin: 5px auto;
         display: block;
         position: relative;
-        width: 100%;
+        width: 90%;
         padding: 0 ;
         border-top: 1px solid #582400;
         border-left: 0px;
