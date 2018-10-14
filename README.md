@@ -97,19 +97,26 @@
 
 ### Результаты ДЗ занятия 17
 
+Карточки курсов заменил на карточки инструментов
+
+![cards](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/project/cards.html "Title")
+
 #### Список инструментов
 
 ![instruments](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_017/instruments.png "Title")
+![instruments_narrow](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_017/instruments_narrow.png "Title")
 
 #### Навели на инструмент
 
 ![instrument_hover](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_017/instrument_hover.png "Title")
+![instrument_hover_narrow](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_017/instrument_hover_narrow.png "Title")
 
 #### Щелкнули на инструмент
 
 Появившаяся область закроется, если в любом месте щелкнуть на эту облать доп. информации
 
 ![instrument_clicked](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_017/instrument_clicked.png "Title")
+![instrument_clicked_narrow](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_017/instrument_clicked_narrow.png "Title")
 
 ## Авторы
 
