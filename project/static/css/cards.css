@@ -1,12 +1,12 @@
 .card {
     display: inline-block;
     vertical-align: top; /* here */
-    width: 40%;
+    width: 47%;
     height: 50%;
     background: #eeeee5;
     border: 1px dashed #abab9a;
     padding: 5px;
-    margin: 5px;
+    margin: 5px 5px 5px 5px;
     color: #2c2c2c;
     overflow:hidden;
      -moz-transition: all 1s ease-out;
@@ -21,7 +21,7 @@
 }
 .card_text {
     font-size: 18px;
-    text-align: right;
+    text-align: left;
     margin-right: 5px;
 }
 .clear_card {
@@ -36,7 +36,7 @@
 
 .full_cards{
     align: center;
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
 }
 .full_card{
