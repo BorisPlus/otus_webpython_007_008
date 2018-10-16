@@ -4,7 +4,7 @@ class Card {
         fullCard.style.display = 'block';
     }
     static hideFullCard(id) {
-        var fullCard = document.getElementById(this.id);
+        var fullCard = document.getElementById(this.id.substring(6));
         fullCard.style.display = 'none';
     }
 }
@@ -15,9 +15,9 @@ autoLoad = function() {
     for (i = 0; i < cards.length; i++) {
         cards[i].onclick = Card.showFullCard;
     }
-    var fullCards = document.getElementsByClassName("full_card");
-    for (i = 0; i < fullCards.length; i++) {
-        fullCards[i].onclick = Card.hideFullCard;
+    var fullCardsClosers = document.getElementsByClassName("close_full_card");
+    for (i = 0; i < fullCardsClosers.length; i++) {
+        fullCardsClosers[i].onclick = Card.hideFullCard;
     }
 };
 

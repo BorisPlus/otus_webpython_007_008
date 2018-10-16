@@ -1,20 +1,32 @@
 .card {
     display: inline-block;
     vertical-align: top; /* here */
-    width: 47%;
+    width: 49%;
     height: 50%;
     background: #eeeee5;
     border: 1px dashed #abab9a;
-    padding: 5px;
-    margin: 5px 5px 5px 5px;
+    padding: 5px auto;
+    margin: 5px auto;
     color: #2c2c2c;
     overflow:hidden;
-     -moz-transition: all 1s ease-out;
-     -o-transition: all 1s ease-out;
-     -webkit-transition: all 1s ease-out;
+     -moz-transition: all 300ms ease-out;
+     -o-transition: all 300ms ease-out;
+     -webkit-transition: all 300ms ease-out;
  }
-.card img {
+ .cards {
+ }
+.left {
     float: left;
+    text-align: left;
+}
+.right {
+    float: right;
+    text-align: left;
+}
+.center {
+    float: center;
+}
+.card img {
     height: 120px;
     float: left;
     margin-right: 5px;
@@ -23,15 +35,19 @@
     font-size: 18px;
     text-align: left;
     margin-right: 5px;
+    margin-left: 5px;
 }
 .clear_card {
   clear: left;
+    width: 100%;
+    background: #efffff;
 }
 
 .card:hover{
-     -webkit-transform: scale(1.3);
-     -moz-transform: scale(1.3);
-     -o-transform: scale(1.3);
+     -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+     -o-transform: scale(1.2);
+     cursor: pointer;
  }
 
 .full_cards{
@@ -45,18 +61,37 @@
     overflow:auto;
     display: none;
     background: #fff;
-    border: 3px dashed #abab9a;
+    border: 1px solid #abab9a;
     width: 90%;
     height: 90%;
     overflow: auto;
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
 }
-.full_card_text {position: relative;
-    text-align: center;
+
+.full_card .close_full_card {
+    float: right;
+    right: 0;
+    top: 5px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    cursor: pointer;
+
+}
+.full_card_text {
+    display: inline-block;
+    /*top: 50%;*/
+    /* transform: translateX(0%) translateY(-50%);*/
+    vertical-align: middle;
+    padding: 5px;
+    margin: 5px;
+}
+.mega_super_puper_center {
+    position: relative;
     top: 50%;
     transform: translateX(0%) translateY(-50%);
     vertical-align: middle;
+    text-align: center;
 }
 @media screen and (max-width: 800px) {
     .cards {

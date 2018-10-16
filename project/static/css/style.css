@@ -1,5 +1,5 @@
 /* http://paletton.com/#uid=10q0u0kllll7dvDehquspgcFnb2 */
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext');
 html, body {
     margin: 0 0;
     padding: 0 0;
@@ -119,6 +119,7 @@ html, body {
 /* lists */
 .notes {
     list-style: none;
+    text-align: left;
 }
 .notes .note {
     margin: 10;
