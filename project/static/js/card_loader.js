@@ -9,7 +9,7 @@ class Card {
     }
 }
 
-autoLoad = function() {
+let autoLoad = function() {
     var cards = document.getElementsByClassName("card");
     var i;
     for (i = 0; i < cards.length; i++) {
@@ -21,11 +21,6 @@ autoLoad = function() {
     }
 };
 
-if (window.addEventListener) // W3C standard
-{
-  window.addEventListener('load', autoLoad, false); // NB **not** 'onload'
-}
-else if (window.attachEvent) // Microsoft
-{
-  window.attachEvent('onload', autoLoad);
-}
+
+window.addEventListener('load', autoLoad, false);
+
