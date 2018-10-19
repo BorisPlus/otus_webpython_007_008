@@ -9,7 +9,7 @@ class Card {
     }
 }
 
-let autoLoad = function() {
+var autoLoad = function() {
     var cards = document.getElementsByClassName("card");
     var i;
     for (i = 0; i < cards.length; i++) {
@@ -19,8 +19,14 @@ let autoLoad = function() {
     for (i = 0; i < fullCardsClosers.length; i++) {
         fullCardsClosers[i].onclick = Card.hideFullCard;
     }
-};
+}
 
-
-window.addEventListener('load', autoLoad, false);
+if (window.onload) {
+    window.onload = function(){
+        window.onload();
+        autoLoad();
+    }
+} else {
+    window.addEventListener('load', autoLoad, false);
+}
 
