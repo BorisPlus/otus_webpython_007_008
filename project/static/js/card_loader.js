@@ -21,12 +21,4 @@ var autoLoad = function() {
     }
 }
 
-if (window.onload) {
-    window.onload = function(){
-        window.onload();
-        autoLoad();
-    }
-} else {
-    window.addEventListener('load', autoLoad, false);
-}
-
+document.addEventListener("load", autoLoad, true);
