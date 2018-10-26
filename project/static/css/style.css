@@ -1,10 +1,10 @@
 /* http://paletton.com/#uid=10q0u0kllll7dvDehquspgcFnb2 */
-@import url('https://fonts.googleapis.com/css?family=PT+Sans&subset=all');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 html, body {
     margin: 0 0;
     padding: 0 0;
     background-color: #FCDBC3;
-    font-family: PT Sans;
+    font-family: font-family: 'Roboto', sans-serif;
 }
 .wrapper {
     height: 100%;
