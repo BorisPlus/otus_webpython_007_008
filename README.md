@@ -157,11 +157,11 @@ python3 ./manage.py runserver --settings=applicatura.settings.dev
 
 #### Как этим управляет админ
 
-![django_admin](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_017/django_admin.png "Title")
+![django_admin](https://raw.githubusercontent.com/BorisPlus/otus_webpython_007_008/master/README.files/images/screenshots/django_admin.png "Title")
 
 #### Как это видит пользователь
 
-![django_user](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_017/django_user.png "Title")
+![django_user](https://raw.githubusercontent.com/BorisPlus/otus_webpython_007_008/master/README.files/images/screenshots/django_user.png "Title")
 
 ## Авторы
 
