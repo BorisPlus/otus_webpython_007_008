@@ -4,6 +4,29 @@
 
 ## Описание
 
+### Требования
+
+Данный проект использует:
+* Django 2
+
+Установите:
+
+```bash
+$ pip3 install 'django>=2.1'
+```
+
+или
+
+```bash
+$ pip3 install -r requirements.txt
+```
+
+### Старт
+
+```bash
+python3 ./manage.py runserver --settings=applicatura.settings.dev
+```
+
 ### Результаты ДЗ занятия 13 (HTML, верстка)
 
 * Страница имеет меню, разделенное на общее (слева) и клиентское (справа).
@@ -120,6 +143,24 @@
 ![instrument_clicked](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_017/instrument_clicked.png "Title")
 
 ![instrument_clicked_narrow](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_017/instrument_clicked_narrow.png "Title")
+
+
+
+### Результаты ДЗ занятия 7 (прикручен бэкэнд) 
+
+Вышло немного не хронологически ))))
+
+```bash
+python3 ./manage.py runserver --settings=applicatura.settings.dev
+```
+
+#### Как этим управляет админ
+
+![django_admin](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_017/django_admin.png "Title")
+
+#### Как это видит пользователь
+
+![django_user](https://raw.githubusercontent.com/BorisPlus/otus_webpython_013/master/README.files/images/screenshots/js_017/django_user.png "Title")
 
 ## Авторы
 
