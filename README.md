@@ -153,6 +153,7 @@ python3 ./manage.py runserver --settings=applicatura.settings.dev
 ```bash
 python3 ./manage.py runserver --settings=applicatura.settings.dev
 ```
+Предупреждаю: цветопередача скринкаста просто жутчайшая. Но и я не "художник" )
 
 #### Как этим управляет админ
 
