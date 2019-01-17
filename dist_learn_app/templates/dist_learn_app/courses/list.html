@@ -1,0 +1,16 @@
+{% extends '../base.html' %}
+{% block html_body %}
+<h2>Курсы</h2>
+<div class="cards">
+    {% for course in object_list %}
+    <div class="card {% if forloop.counter0|divisibleby:2 %}{{ 'left' }}{% else %}{{ 'rigth' }}{% endif %}"
+         id="card_{{ course.id }}">
+        {% include "./course.html" with course=course %} <br>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}
+
+

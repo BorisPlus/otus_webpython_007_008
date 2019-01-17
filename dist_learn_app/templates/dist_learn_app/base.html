@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru" class="no-js no-touch ">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <link type="text/css" href="/static/css/style.css" rel="stylesheet"/>
+    <link type="text/css" href="/static/css/bug_report.css" rel="stylesheet"/>
+    <link type="text/css" href="/static/css/cards.css" rel="stylesheet"/>
+    <script src="/static/js/bug_report.js"></script>
+    <title>
+        {% block html_head_title %}
+        Аппликатура
+        {% endblock %}
+    </title>
+    {% load i18n admin_static admin_list %}
+    {% block extrahead %}
+    <script type="text/javascript" src="/static/admin/js/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/subscribing.js"></script>
+    {% endblock %}
+</head>
+<body>
+
+<div class="header">
+    <div class="header_text">
+        <h1 class="project_name">Аппликатура</h1>
+        <p>Умение разрабатывать аппликатуру — важная составляющая мастерства исполнителя </p>
+    </div>
+    <div class="header_img">
+        <img height="60" src="/static/img/a.png">
+    </div>
+</div>
+
+<div class="navigation">
+    <ul>
+        <li><a href="/" class="checked">Главная</a></li>
+        <li><a href="/course/list">Курсы</a></li>
+        <li><a href="/contacts">Контакты</a></li>
+        <li style="float:right">{% include "./auth/auth_nav_item.html" %}</li>
+    </ul>
+</div>
+
+<div class="content">
+
+    <div class="main_content">
+
+{% block html_body %}
+{% endblock %}
+
+    </div>
+
+    <div class="additional_content">
+        <div id="bug_report">
+            <div id="bug_report_text_area">Если нашли ошибку, выделите текст и нажмите на кнопку.</div>
+            <div id="bug_report_button_area"><button id="bug_report_button">Я нашел ошибку</button></div>
+        </div>
+        <!--{ % include "./auth/auth_nav_item.html" % }<br>-->
+        <h3>Популярные разделы:</h3>
+        <ul class="notes">
+            <li class="note"><a class='link' href="#home">Аккорды для гитары</a></li>
+            <li class="note"><a class='link' href="#news">Аккорды для укулёле</a></li>
+        </ul>
+        <h3>Рекомендуемые материалы и истонки:</h3>
+        <ul class="notes">
+            <li class="note">
+                <a class='link' href="https://amdm.ru/">AmDm.ru</a> российский портал для музыкантов
+            </li>
+            <li class="note">
+                <a class='link' href="https://mychords.net/">MyChords.net (Hm6.ru)</a> аккорды песен под гитару
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="footer">
+    applicatura.ru © 2018
+</div>
+</body>
+</html>

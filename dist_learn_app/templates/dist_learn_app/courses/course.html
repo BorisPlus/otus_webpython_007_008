@@ -1,0 +1,10 @@
+<span class="img">
+    <a href="{% url 'course_lessons' course.id %}"><img width="50px"
+                                                        src="/{{ course.main_image }}"
+                                                        alt="{{ course.main_image }}"></a>
+</span>
+{{ course.name }}
+<p class="card_text">
+    {{ course.description }}
+</p>
+

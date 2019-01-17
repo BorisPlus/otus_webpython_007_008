@@ -1,0 +1,16 @@
+{% extends 'dist_learn_app/base.html' %}
+
+{% block html_body %}
+{% for course in object_list %}
+
+<p>
+    <a href="{% url 'course_lessons' course.id %}">
+        <img width="150px" src="/{{ course.main_image }}" alt="{{ course.main_image }}">
+    </a><br>
+
+    {{ course.name }} <br>
+    {{ course.description }} <br>
+    <a href="{% url 'course_lessons' course.id %}">Открытые уроки курса</a>
+</p>
+{% endfor %}
+{% endblock %}

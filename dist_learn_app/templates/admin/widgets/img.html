@@ -1,0 +1,8 @@
+{% if widget.value %}
+<p class="url">{{ current_label }}
+    <img src="/{{ widget.value }}" width="100px"><br>
+    {{ change_label }} {% endif %}
+    {% include "django/forms/widgets/input.html" %}
+    {% if widget.value %}
+</p>
+{% endif %}
