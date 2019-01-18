@@ -17,7 +17,7 @@ class Base(Configuration):
 
         'dist_learn_app',
 
-        # 'django.contrib.admin',
+        'rest_framework',
     ]
     MIDDLEWARE = [
         'django.middleware.csrf.CsrfViewMiddleware',
