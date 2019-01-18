@@ -4,10 +4,16 @@ from dist_learn_app import models
 
 
 class CourseSerializer(serializers.ModelSerializer):
+    main_image = serializers.SerializerMethodField()
+
     class Meta:
         model = models.Course
         fields = ('id', 'name', 'order', 'main_image', 'description')
         read_only_fields = ('id',)
+
+    def get_main_image(self, instance):
+        request = self.context.get('request')
+        return 'http://%s/%s' % (request.get_host(), instance.main_image)
 
 
 class LessonSerializer(serializers.ModelSerializer):
