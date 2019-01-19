@@ -1,12 +1,7 @@
 from .models import (
-    Course,
     Lesson,
     Subscriber,
     Subscription
-)
-from django.views.generic import (
-    ListView,
-    DetailView,
 )
 from django.views import (
     View,
@@ -19,28 +14,11 @@ from django.http import (
 )
 from . import views
 
-from django.views.generic import TemplateView, RedirectView
+from django.views.generic import TemplateView
 
 from django.contrib.auth import (
     authenticate, login, logout
 )
-
-# from django.http import HttpResponse
-
-
-# class CourseList(ListView):
-#     model = Course
-#     template_name = 'dist_learn_app/courses/list.html'
-#
-#     def get_queryset(self):
-#         queryset = super(CourseList, self).get_queryset()
-#         return queryset
-#
-#
-# class CourseLessons(DetailView):
-#     model = Course
-#     template_name = 'dist_learn_app/lessons/list.html'
-
 
 from django.shortcuts import render
 
