@@ -1,10 +1,20 @@
 from configurations import Configuration
 import os
+import platform
+
+import hashlib, binascii
+
+
+def get_secret_key():
+    dk = hashlib.pbkdf2_hmac(platform.node(), b'password', b'salt', 100000)
+    return binascii.hexlify(dk)
 
 
 class Base(Configuration):
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    SECRET_KEY = ''
+
+    SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', get_secret_key())
+
     DEBUG = False
     ALLOWED_HOSTS = []
     INSTALLED_APPS = [
@@ -106,4 +116,3 @@ class BaseDev(Base):
     DEBUG_TOOLBAR_CONFIG = {
         'INTERCEPT_REDIRECTS': False,
     }
-

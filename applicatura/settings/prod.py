@@ -6,8 +6,6 @@ import os
 class Prod(base.Base):
     ALLOWED_HOSTS = ['*']
 
-    SECRET_KEY = ''
-
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
