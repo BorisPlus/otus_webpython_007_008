@@ -2,11 +2,12 @@
 <html lang="ru" class="no-js no-touch ">
 <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="/static/img/favicon.ico">
-    <link type="text/css" href="/static/css/style.css" rel="stylesheet"/>
-    <link type="text/css" href="/static/css/bug_report.css" rel="stylesheet"/>
-    <link type="text/css" href="/static/css/cards.css" rel="stylesheet"/>
-    <script src="/static/js/bug_report.js"></script>
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+    <link type="text/css" href="{% static 'css/style.css' %}" rel="stylesheet"/>
+    <link type="text/css" href="{% static 'css/bug_report.css' %}" rel="stylesheet"/>
+    <link type="text/css" href="{% static 'css/cards.css' %}" rel="stylesheet"/>
+    <script src="{% static 'js/bug_report.js' %}"></script>
     <title>
         {% block html_head_title %}
         Аппликатура
@@ -14,8 +15,8 @@
     </title>
     {% load i18n admin_static admin_list %}
     {% block extrahead %}
-    <script type="text/javascript" src="/static/admin/js/vendor/jquery/jquery.js"></script>
-    <script type="text/javascript" src="/static/js/subscribing.js"></script>
+    <script type="text/javascript" src="{% static 'admin/js/vendor/jquery/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/subscribing.js' %}"></script>
     {% endblock %}
 </head>
 <body>
@@ -35,6 +36,10 @@
         <li><a href="/" class="checked">Главная</a></li>
         <li><a href="/course/list">Курсы</a></li>
         <li><a href="/contacts">Контакты</a></li>
+        {% if request.user.is_authenticated %}
+        <li><a class="active" href="/subscriber/lessons">Твои занятия</a></li>
+        {% endif %}
+
         <li style="float:right">{% include "./auth/auth_nav_item.html" %}</li>
     </ul>
 </div>
@@ -43,15 +48,17 @@
 
     <div class="main_content">
 
-{% block html_body %}
-{% endblock %}
+        {% block html_body %}
+        {% endblock %}
 
     </div>
 
     <div class="additional_content">
         <div id="bug_report">
             <div id="bug_report_text_area">Если нашли ошибку, выделите текст и нажмите на кнопку.</div>
-            <div id="bug_report_button_area"><button id="bug_report_button">Я нашел ошибку</button></div>
+            <div id="bug_report_button_area">
+                <button id="bug_report_button">Я нашел ошибку</button>
+            </div>
         </div>
         <!--{ % include "./auth/auth_nav_item.html" % }<br>-->
         <h3>Популярные разделы:</h3>
