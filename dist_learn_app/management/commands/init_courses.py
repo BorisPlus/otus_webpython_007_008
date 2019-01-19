@@ -51,11 +51,10 @@ class Command(BaseCommand):
                 course_object.description = course['description']
                 course_object.order = course_index + 1
                 from_path = os.path.join(base_from_path, course['main_image'])
-                # to_path = os.path.join(base_upload_path, course['main_image'])
-                # os.makedirs(base_upload_path, exist_ok=True)
-                # shutil.copyfile(from_path, to_path)
-                # course_object.main_image = os.path.join(related_upload_path, course['main_image'])
-                course_object.main_image
+                to_path = os.path.join(base_upload_path, course['main_image'])
+                os.makedirs(base_upload_path, exist_ok=True)
+                shutil.copyfile(from_path, to_path)
+                course_object.main_image = os.path.join(related_upload_path, course['main_image'])
                 course_object.save()
 
                 self.stdout.write(
