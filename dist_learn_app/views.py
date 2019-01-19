@@ -24,6 +24,8 @@ from django.contrib.auth import (
     authenticate, login, logout
 )
 
+from django.shortcuts import redirect
+
 
 def get_default_view(request):
     return redirect('/index')
