@@ -33,11 +33,11 @@
 
 <div class="navigation">
     <ul>
-        <li><a href="/" class="checked">Главная</a></li>
-        <li><a href="/course/list">Курсы</a></li>
-        <li><a href="/contacts">Контакты</a></li>
+        <li><a href="{% url 'dist_learn_app:index' %}" class="checked">Главная</a></li>
+        <li><a href="{% url 'dist_learn_app:course_list' %}">Курсы</a></li>
+        <li><a href="{% url 'dist_learn_app:contacts' %}">Контакты</a></li>
         {% if request.user.is_authenticated %}
-        <li><a class="active" href="/subscriber/lessons">Твои занятия</a></li>
+        <li><a class="active" href="{% url 'dist_learn_app:subscriber_lessons' %}">Твои занятия</a></li>
         {% endif %}
 
         <li style="float:right">{% include "./auth/auth_nav_item.html" %}</li>
