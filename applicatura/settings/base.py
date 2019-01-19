@@ -2,12 +2,13 @@ from configurations import Configuration
 import os
 import platform
 
-import hashlib, binascii
+from hashlib import sha256
 
 
 def get_secret_key():
-    dk = hashlib.pbkdf2_hmac(platform.node(), b'password', b'salt', 100000)
-    return binascii.hexlify(dk)
+    h = sha256()
+    h.update(platform.node().encode())
+    return h.hexdigest()
 
 
 class Base(Configuration):

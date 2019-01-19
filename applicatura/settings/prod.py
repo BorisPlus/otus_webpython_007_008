@@ -3,7 +3,7 @@ from . import base
 import os
 
 
-class Prod(base.Base):
+class Config(base.Base):
     ALLOWED_HOSTS = ['*']
 
     DATABASES = {
