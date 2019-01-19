@@ -11,8 +11,9 @@ if settings.DEBUG:
         path('__debug__/', include(debug_toolbar.urls)),
     ]
 
+
 urlpatterns += [
     url(r'just_for_me/', admin.site.urls),
-    path('rest_api/', include('api_ver_0_app.urls')),
+    url(r'rest_api/', include('api_ver_0_app.urls')),
     url(r'', include('dist_learn_app.urls')),
 ]
