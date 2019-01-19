@@ -19,12 +19,13 @@ from django.contrib.auth.models import User
 import datetime
 
 import uuid
+import os
 
 
 def get_upload_path(instance, filename):
     ext = filename.split('.')[-1]
     filename = "%s.%s" % (uuid.uuid4(), ext)
-    return 'static/uploads/%s/%s/%s.jpg' % (filename[:1], filename[2:3], filename)
+    return os.path.join('static', 'uploads', filename[:1], filename[2:3], '%s.jpg' % filename )
 
 
 class Course(models.Model):
@@ -43,7 +44,7 @@ class Course(models.Model):
     description = models.TextField(blank=True, null=True, max_length=250, verbose_name='Описание курса', )
 
     def __str__(self):
-        return '{name}'.format(name=self.name)
+        return self.name
 
 
 class Lesson(models.Model):
@@ -62,12 +63,13 @@ class Lesson(models.Model):
     description = models.TextField(blank=True, null=True, max_length=250, verbose_name='Описание урока', )
 
     def __str__(self):
-        return '{name}'.format(name=self.name)
+        return self.name
 
 
 class SubscriberManager(models.Manager):
     def get_queryset(self):
-        return super(SubscriberManager, self).get_queryset().filter(is_superuser=False)
+        # TODO: надо подумать над ".filter(is_superuser=False)"
+        return super(SubscriberManager, self).get_queryset()
 
     # Django > 1.11 требует реализации данного метода при расширении стандартной модели
     # пользователей административной части
@@ -75,8 +77,8 @@ class SubscriberManager(models.Manager):
         email = email or ''
         try:
             email_name, domain_part = email.strip().rsplit('@', 1)
-        except ValueError:
-            pass
+        except ValueError as value_exc:
+            raise value_exc
         else:
             email = '@'.join([email_name, domain_part.lower()])
 
@@ -101,11 +103,7 @@ class Subscriber(User):
         super(Subscriber, self).save(*args, **kwargs)
 
     def __str__(self):
-        return '%s (%s %s)' % (
-            self.username,
-            self.last_name if self.last_name else 'н.д.',
-            self.first_name if self.first_name else 'н.д.',
-        )
+        return self.username
 
 
 class Subscription(models.Model):
