@@ -1,4 +1,5 @@
 from django.core.management.base import BaseCommand
+
 from . import (
     init_users,
     init_courses,
