@@ -51,6 +51,9 @@ python3 ./manage.py createsuperuser --username=admin --email=admin@admin.admin  
 
 ![django_user](https://raw.githubusercontent.com/BorisPlus/otus_webpython_007_008/master/README.files/images/screencasts/django_user.gif "Title")
   
+Итого:
+* http://localhost:8000 - интерфейс пользователя 
+* http://localhost:8000/just_for_me - стандартная админка Django 
 
 ### Результаты ДЗ занятия 8 (прикручен REST API) 
 
@@ -61,13 +64,24 @@ python3 ./manage.py createsuperuser --username=admin --email=admin@admin.admin  
 
 Закрытая часть:
 * http://localhost:8000/rest_api/subscriber/create - создание учетки подписчика
-* http://localhost:8000/rest_api/subscriber/login - login подписчика
-* http://localhost:8000/rest_api/subscriber/current - создание учетки подписчика
-* http://localhost:8000/rest_api/subscriber/logout - оказывается это целая проблема JWT-logout, решают топорно, через введение UIID-поля токена пользователя
+* http://localhost:8000/rest_api/subscriber/login - авторизация подписчика
+* http://localhost:8000/rest_api/subscriber/current - информация о текущем пользователе\подписчике
+* http://localhost:8000/rest_api/subscriber/logout - оказывается это целая проблема JWT-logout, решают топорно, 
+через введение UUID-поля токена пользователя, так что тут у меня Sessions
 * http://localhost:8000/rest_api/subscriber/lesson/list - уроки подписчика
+* [не реализовал] http://localhost:8000/rest_api/lesson/[id]/subscription/check - проверка на наличие подписки
+* [не реализовал] http://localhost:8000/rest_api/lesson/[id]/subscription/change - изменение подписки
 
 Только для админа :
-http://localhost:8000/rest_api/subscription/list - (для админа только) подписки всех на все 
+* http://localhost:8000/rest_api/subscription/list - подписки всех на все 
+* http://localhost:8000/rest_api/lesson/list - список всех уроков
+
+### Результаты
+
+Имеем три точки входа:
+* http://localhost:8000 - интерфейс пользователя 
+* http://localhost:8000/just_for_me/ - стандартная админка Django 
+* http://localhost:8000/rest_api/ - REST API
 
 ## Авторы
 
