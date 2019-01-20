@@ -1,7 +1,9 @@
 from .models import (
-    Lesson,
     Subscriber,
     Subscription
+)
+from dist_learn_app.models import (
+    Lesson,
 )
 from django.views import (
     View,
@@ -12,7 +14,7 @@ from django.http import (
     HttpResponseRedirect,
     JsonResponse,
 )
-from . import views
+from dist_learn_app import views as dist_learn_app_views
 
 from django.views.generic import TemplateView
 
@@ -25,11 +27,11 @@ from django.shortcuts import render
 
 class SubscriberLessons(View):
     model = Subscriber
-    template_name = 'dist_learn_app/subscribers/lessons.html'
+    template_name = 'user_app/subscribers/lessons.html'
 
     def get(self, request, *args, **kwargs):
         if not request.user.is_authenticated:
-            return views.get_default_view(request)
+            return dist_learn_app_views.get_default_view(request)
 
         obj = self.model.objects.get(pk=request.user.id)
         related = Subscription.objects.all().filter(subscriber=obj)
@@ -37,7 +39,7 @@ class SubscriberLessons(View):
 
 
 class SignInOrSignUp(TemplateView):
-    template_name = "dist_learn_app/auth/auth_form.html"
+    template_name = "user_app/auth/auth_form.html"
 
     def post(self, request):
 

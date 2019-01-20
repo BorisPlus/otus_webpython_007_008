@@ -1,8 +1,8 @@
-{% extends 'templates_app/base.html' %}
+{% extends 'dist_learn_app/base.html' %}
 
-{% block main_content %}
-
+{% block html_body %}
 {% for course in object_list %}
+
 <p>
     <a href="{% url 'course_lessons' course.id %}">
         <img width="150px" src="/{{ course.main_image }}" alt="{{ course.main_image }}">
@@ -13,5 +13,4 @@
     <a href="{% url 'dist_learn_app:course_lessons' pk=course.id %}">Открытые уроки курса</a>
 </p>
 {% endfor %}
-
 {% endblock %}

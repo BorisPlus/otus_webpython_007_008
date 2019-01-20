@@ -4,7 +4,7 @@
 
 {% if not request.user.is_authenticated %}
 
-<a href="{% url 'dist_learn_app:login' %}"><img width="20px"
+<a href="{% url 'user_app:login' %}"><img width="20px"
          src="{% static 'img/mediator.raw.deny.svg.png' %}"
          title="Чтоб записаться на урок необходимо авторизоваться"></a>
 
@@ -16,7 +16,7 @@
          src="{% static 'img/mediator.raw.green.svg.png' %}"
          title="Вы записаны на урок" class="subscribing"
          id="anchor_lesson_{{ lesson.pk }}"
-         data-url_href="{% url 'dist_learn_app:change_subscribe' lesson_pk=lesson.pk %}"
+         data-url_href="{% url 'user_app:change_subscribe' lesson_pk=lesson.pk %}"
          data-lesson_id="{{ lesson.id }}"
          data-lesson_name="{{ lesson.name }}"
          data-current_subscription="subscribed">
@@ -25,7 +25,7 @@
          src="{% static 'img/mediator.raw.gray.svg.png' %}"
          title="Вы не записаны на урок" class="subscribing"
          id="anchor_lesson_{{ lesson.id }}"
-         data-url_href="{% url 'dist_learn_app:change_subscribe' lesson_pk=lesson.pk %}"
+         data-url_href="{% url 'user_app:change_subscribe' lesson_pk=lesson.pk %}"
          data-lesson_id="{{ lesson.id }}"
          data-lesson_name="{{ lesson.name }}"
         data-current_subscription="unsubscribed">

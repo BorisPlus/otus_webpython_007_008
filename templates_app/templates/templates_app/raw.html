@@ -2,15 +2,17 @@
 <html lang="ru" class="no-js no-touch ">
 <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
     <title>
         {% block html_head_title %}
         Аппликатура
         {% endblock %}
     </title>
+    {% block extra_head %}
+    {% endblock %}
 </head>
 <body>
-
 {% block html_body %}
 {% endblock %}
 </body>

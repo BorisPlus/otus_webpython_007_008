@@ -1,0 +1,16 @@
+{% extends 'templates_app/base.html' %}
+
+{% block main_content %}
+
+<h2>{{ object.username }}, вас ожидают на занятиях:</h2>
+<ul class="notes">
+    {% for related_object in related %}
+    <li class="note">
+        {% include "dist_learn_app/lessons/lesson.html" with lesson=related_object.lesson %}
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
+
+

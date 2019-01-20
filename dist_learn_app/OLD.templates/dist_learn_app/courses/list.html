@@ -1,7 +1,5 @@
-{% extends 'templates_app/base.html' %}
-
-{% block main_content %}
-
+{% extends '../base.html' %}
+{% block html_body %}
 <h2>Курсы</h2>
 <div class="cards">
     {% for course in object_list %}
@@ -12,4 +10,7 @@
     {% endfor %}
 </div>
 
+
 {% endblock %}
+
+
