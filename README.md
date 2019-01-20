@@ -148,9 +148,19 @@ python3 ./manage.py runserver --settings=applicatura.settings.dev
 
 ### Результаты ДЗ занятия 7 (прикручен бэкэнд) 
 
+```bash
+python3 manage.py migrate --settings=applicatura.settings.dev
+
+python3 ./manage.py init_test_data --settings=applicatura.settings.dev
+```
+
 Вышло немного не хронологически ))))
 
 ```bash
+python3 manage.py migrate --settings=applicatura.settings.dev
+python3 manage.py makemigrations --settings=applicatura.settings.dev
+python3 ./manage.py init_test_data --settings=applicatura.settings.dev
+
 python3 ./manage.py runserver --settings=applicatura.settings.dev
 ```
 Предупреждаю: цветопередача скринкаста просто жутчайшая. Но и я не "художник" )
@@ -163,6 +173,10 @@ python3 ./manage.py runserver --settings=applicatura.settings.dev
 
 ![django_user](https://raw.githubusercontent.com/BorisPlus/otus_webpython_007_008/master/README.files/images/screencasts/django_user.gif "Title")
   
+
+### Результаты ДЗ занятия 8 (прикручен api) 
+
+
 ## Авторы
 
 * **BorisPlus** - [https://github.com/BorisPlus/otus_webpython_013](https://github.com/BorisPlus/otus_webpython_013)
@@ -174,3 +188,5 @@ python3 ./manage.py runserver --settings=applicatura.settings.dev
 ## Дополнительные сведения
 
 Проект в рамках домашнего задания курса "Web-разработчик на Python" на https://otus.ru/learning
+python3 manage.py createsuperuser --username=admin --email=admin@admin.admin
+python3 manage.py createsuperuser --username=admin --email=admin@applicatura.ru --settings=applicatura.settings.prod
