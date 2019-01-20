@@ -52,8 +52,22 @@ python3 ./manage.py createsuperuser --username=admin --email=admin@admin.admin  
 ![django_user](https://raw.githubusercontent.com/BorisPlus/otus_webpython_007_008/master/README.files/images/screencasts/django_user.gif "Title")
   
 
-### Результаты ДЗ занятия 8 (прикручен api) 
+### Результаты ДЗ занятия 8 (прикручен REST API) 
 
+Открытая часть:
+* http://localhost:8000/rest_api/course/list - список курсов
+* http://localhost:8000/rest_api/course/1 - курс подробно с уроками
+* http://localhost:8000/rest_api/lesson/1 - урок подробно
+
+Закрытая часть:
+* http://localhost:8000/rest_api/subscriber/create - создание учетки подписчика
+* http://localhost:8000/rest_api/subscriber/login - login подписчика
+* http://localhost:8000/rest_api/subscriber/current - создание учетки подписчика
+* http://localhost:8000/rest_api/subscriber/logout - оказывается это целая проблема JWT-logout, решают топорно, через введение UIID-поля токена пользователя
+* http://localhost:8000/rest_api/subscriber/lesson/list - уроки подписчика
+
+Только для админа :
+http://localhost:8000/rest_api/subscription/list - (для админа только) подписки всех на все 
 
 ## Авторы
 
