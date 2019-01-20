@@ -3,7 +3,7 @@ from dist_learn_app import models
 import os
 import shutil
 
-base_from_path = os.path.join(os.path.abspath('.'), 'dist_learn_app', 'management', 'commands', 'courses_pics')
+base_from_path = os.path.join(os.path.abspath('.'), 'manage_app', 'management', 'commands', 'courses_pics')
 related_upload_path = os.path.join('static', 'uploads', 'test')
 base_upload_path = os.path.join(os.path.abspath('.'), related_upload_path)
 COURSES = [
