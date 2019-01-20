@@ -5,4 +5,5 @@ __pycache__/
 gitignore/
 .idea/
 static/uploads/*
+collected_static/
 *.sqlite3
