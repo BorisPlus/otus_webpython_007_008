@@ -27,6 +27,9 @@ class Base(Configuration):
         'django.contrib.staticfiles',
 
         'dist_learn_app',
+        'manage_app',
+        'user_app',
+        'templates_app',
 
         'rest_framework',
     ]
@@ -85,7 +88,7 @@ class Base(Configuration):
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, 'static'),
     )
-    print('STATICFILES_DIRS', os.path.join(BASE_DIR, 'static'))
+    STATIC_ROOT = os.path.join(BASE_DIR, 'collected_static')
 
 
 class BaseDev(Base):
