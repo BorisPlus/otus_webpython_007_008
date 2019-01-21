@@ -57,10 +57,16 @@ python3 ./manage.py runserver --settings=applicatura.settings.prod
 
 ### Результаты ДЗ занятия 8 (прикручен REST API) 
 
+#### Общедоступное
+
 Открытая часть:
 * http://localhost:8000/rest_api/course/list - список курсов
 * http://localhost:8000/rest_api/course/1 - курс подробно с уроками
 * http://localhost:8000/rest_api/lesson/1 - урок подробно
+
+![rest_api](README.files/images/screencasts/rest_api.gif "Title")
+
+#### Интерактивное
 
 Закрытая часть:
 * http://localhost:8000/rest_api/subscriber/create - создание учетки подписчика
@@ -72,15 +78,16 @@ python3 ./manage.py runserver --settings=applicatura.settings.prod
 * http://localhost:8000/rest_api/lesson/1/subscription/check - проверка на наличие подписки
 * http://localhost:8000/rest_api/lesson/1/subscription/change - изменение статуса подписки
 
+![rest_api_accounted](README.files/images/screencasts/rest_api_accounted.gif "Title")
+
+#### Специальное
+
 Только для админа :
 * http://localhost:8000/rest_api/subscription/list - подписки всех на все 
 * http://localhost:8000/rest_api/lesson/list - список всех уроков
 
-#### REST API
 
-![rest_api](https://raw.githubusercontent.com/BorisPlus/otus_webpython_007_008/master/README.files/images/screencasts/rest_api.gif "Title")
-
-### Результат
+## Результат 7 + 8
 
 Имеем три точки входа:
 * http://localhost:8000 - интерфейс пользователя 
