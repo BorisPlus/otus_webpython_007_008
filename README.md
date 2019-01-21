@@ -45,13 +45,9 @@ python3 ./manage.py runserver --settings=applicatura.settings.prod
 
 ![django_user](https://raw.githubusercontent.com/BorisPlus/otus_webpython_007_008/master/README.files/images/screencasts/django_user.gif "Title")
   
-#### Как это видит пользователь (доп список подписок)
-
-![django_user](https://raw.githubusercontent.com/BorisPlus/otus_webpython_007_008/master/README.files/images/screencasts/django_user.gif "Title")
-
 #### Личный кабинет (список подписок)
 
-![django_subscriber_lessons](https://raw.githubusercontent.com/BorisPlus/otus_webpython_007_008/master/README.files/images/screencasts/django_subscriber_lessons.gif "Title")
+![django_subscriber_lessons_view](README.files/images/screencasts/django_subscriber_lessons_view.gif "Title")
 
 #### Результат
 
