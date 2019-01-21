@@ -1,9 +1,0 @@
-{% if request.user.is_authenticated %}
-
-<a class="active" href="{% url 'user_app:logout' %}">{{ request.user }} (выйти)</a>
-
-{% else %}
-
-<a class="active" title="Авторизуйся и ты сможешь записаться на урок" href="{% url 'user_app:login' %}">Авторизуйся</a>
-
-{% endif %}
