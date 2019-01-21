@@ -1,8 +1,6 @@
 from django.contrib import admin
 from . import models
-from django.utils.html import mark_safe
 from dist_learn_app import models as dist_learn_app_models
-from dist_learn_app import views as dist_learn_app_views
 
 admin.site.site_header = 'Пользователи'
 

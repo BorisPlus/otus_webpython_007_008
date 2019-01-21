@@ -17,7 +17,6 @@ $ pip3 install -r requirements.txt
 #### Dev
 
 ```bash
-python3 ./manage.py makemigrations --settings=applicatura.settings.dev
 python3 ./manage.py migrate --settings=applicatura.settings.dev
 python3 ./manage.py init_test_data --settings=applicatura.settings.dev
 
@@ -28,16 +27,15 @@ python3 ./manage.py runserver --settings=applicatura.settings.dev
 #### Production
 
 ```bash
-python3 ./manage.py makemigrations --settings=applicatura.settings.prod
 python3 ./manage.py migrate --settings=applicatura.settings.prod
 python3 ./manage.py init_test_data --settings=applicatura.settings.prod
 
 python3 ./manage.py collectstatic --settings=applicatura.settings.prod
-python3 ./manage.py createsuperuser --username=admin --email=admin@admin.admin  --settings=applicatura.settings.dev
+python3 ./manage.py createsuperuser --username=admin --email=admin@admin.admin  --settings=applicatura.settings.prod
 python3 ./manage.py runserver --settings=applicatura.settings.prod
 ```
 
-Предупреждаю: цветопередача скринкаста просто жутчайшая. Но и я не "художник" )
+Предупреждаю: цветопередача скринкаста просто жутчайшая. Но и я, конечно, не "художник" )
 
 #### Как этим управляет админ
 
@@ -94,5 +92,5 @@ python3 ./manage.py runserver --settings=applicatura.settings.prod
 ## Дополнительные сведения
 
 Проект в рамках домашнего задания курса "Web-разработчик на Python" на https://otus.ru/learning
+
 python3 manage.py createsuperuser --username=admin --email=admin@admin.admin
-python3 manage.py createsuperuser --username=admin --email=admin@applicatura.ru --settings=applicatura.settings.prod

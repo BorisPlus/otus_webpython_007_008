@@ -15,6 +15,7 @@ if settings.DEBUG:
 
 urlpatterns += [
     url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
+    url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
     url(r'just_for_me/', admin.site.urls),
     url(r'rest_api/', include('api_ver_0_app.urls')),
     url(r'subscriber/', include('user_app.urls')),

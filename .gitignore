@@ -1,9 +1,13 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 
-# My gitignore
-gitignore/
+# PyCharm
 .idea/
-static/uploads/*
-collected_static/
+
+# Django
 *.sqlite3
+media/
+collected_static/
+
+# My own force ignore
+gitignore/

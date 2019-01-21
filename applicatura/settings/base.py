@@ -54,7 +54,8 @@ class Base(Configuration):
                     'django.template.context_processors.request',
                     'django.contrib.auth.context_processors.auth',
                     'django.contrib.messages.context_processors.messages',
-                ],
+                    "templates_app.context_processors.template_media",
+                ]
             },
         },
     ]
@@ -96,9 +97,10 @@ class Base(Configuration):
         )
     }
 
-    JWT_AUTH = {
-        'JWT_RESPONSE_PAYLOAD_HANDLER': 'api_ver_0_app.utils.jwt_response_handler',
-    }
+    MEDIA_DIR_NAME = 'media'
+    MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_DIR_NAME)
+    MEDIA_URL = 'http://127.0.0.1:8000/%s/' % MEDIA_DIR_NAME
+
 
 
 class BaseDev(Base):

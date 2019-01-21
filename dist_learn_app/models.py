@@ -9,7 +9,7 @@ import os
 def get_upload_path(instance, filename):
     ext = filename.split('.')[-1]
     filename = "%s.%s" % (uuid.uuid4(), ext)
-    return os.path.join('static', 'uploads', filename[:1], filename[2:3], '%s.jpg' % filename )
+    return os.path.join('uploads', filename[:1], filename[2:3], '%s.jpg' % filename)
 
 
 class Course(models.Model):
@@ -21,9 +21,9 @@ class Course(models.Model):
 
     name = models.CharField(blank=False, null=False, max_length=50, verbose_name='Название курса', )
     order = models.PositiveIntegerField(blank=False, null=False, default=1, verbose_name='#', )
-    main_image = models.FileField(blank=False, null=False, default='undef.png',
-                                  verbose_name='Иконка курса',
-                                  upload_to=get_upload_path)
+    main_image = models.ImageField(blank=False, null=False, default='undef.png',
+                                   verbose_name='Иконка курса',
+                                   upload_to=get_upload_path)
 
     description = models.TextField(blank=True, null=True, max_length=250, verbose_name='Описание курса', )
 
@@ -48,4 +48,3 @@ class Lesson(models.Model):
 
     def __str__(self):
         return self.name
-

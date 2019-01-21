@@ -1,11 +1,9 @@
 from django.contrib import admin
-from . import models
 from django.utils.html import mark_safe
 
-from spices.admin_extra_classes import (
-    ImageAdmin
-)
+from templates_app.django_spices.admin import models as spiced
 from user_app import admin as user_app_admin
+from . import models
 
 admin.site.site_header = 'Открытые уроки'
 
@@ -16,7 +14,7 @@ class LessonInline(admin.TabularInline):
 
 
 @admin.register(models.Course)
-class CourseAdminModel(ImageAdmin):
+class CourseAdminModel(spiced.ImageAdmin):
     inlines = (
         LessonInline,
     )
