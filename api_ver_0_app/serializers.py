@@ -61,7 +61,7 @@ class CourseDetailsSerializer(CourseSerializer):
 
 class SubscriberSerializer(serializers.ModelSerializer):
     token = serializers.SerializerMethodField()
-    password = serializers.CharField(write_only=True)
+    password = serializers.CharField(write_only=True, style={'input_type': 'password'})
 
     def get_token(self, obj):
         jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
