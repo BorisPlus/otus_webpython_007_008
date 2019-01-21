@@ -9,5 +9,8 @@ __pycache__/
 media/
 collected_static/
 
+# byzanz-record temporary
+**.goutputstream**
+
 # My own force ignore
 gitignore/

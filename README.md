@@ -48,7 +48,13 @@ python3 ./manage.py runserver --settings=applicatura.settings.prod
 #### Как это видит пользователь (доп список подписок)
 
 ![django_user](https://raw.githubusercontent.com/BorisPlus/otus_webpython_007_008/master/README.files/images/screencasts/django_user.gif "Title")
-  
+
+#### Личный кабинет (список подписок)
+
+![django_subscriber_lessons](https://raw.githubusercontent.com/BorisPlus/otus_webpython_007_008/master/README.files/images/screencasts/django_subscriber_lessons.gif "Title")
+
+#### Результат
+
 Итого:
 * http://localhost:8000 - интерфейс пользователя 
 * http://localhost:8000/just_for_me - стандартная админка Django 
@@ -74,7 +80,11 @@ python3 ./manage.py runserver --settings=applicatura.settings.prod
 * http://localhost:8000/rest_api/subscription/list - подписки всех на все 
 * http://localhost:8000/rest_api/lesson/list - список всех уроков
 
-### Результаты
+#### REST API
+
+![rest_api](https://raw.githubusercontent.com/BorisPlus/otus_webpython_007_008/master/README.files/images/screencasts/rest_api.gif "Title")
+
+### Результат
 
 Имеем три точки входа:
 * http://localhost:8000 - интерфейс пользователя 
