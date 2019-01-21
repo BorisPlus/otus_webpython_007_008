@@ -90,6 +90,16 @@ class Base(Configuration):
     )
     STATIC_ROOT = os.path.join(BASE_DIR, 'collected_static')
 
+    REST_FRAMEWORK = {
+        'DEFAULT_AUTHENTICATION_CLASSES': (
+            'rest_framework.authentication.SessionAuthentication',
+        )
+    }
+
+    JWT_AUTH = {
+        'JWT_RESPONSE_PAYLOAD_HANDLER': 'api_ver_0_app.utils.jwt_response_handler',
+    }
+
 
 class BaseDev(Base):
     DEBUG = True

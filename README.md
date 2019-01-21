@@ -69,8 +69,8 @@ python3 ./manage.py createsuperuser --username=admin --email=admin@admin.admin  
 * http://localhost:8000/rest_api/subscriber/logout - оказывается это целая проблема JWT-logout, решают топорно, 
 через введение UUID-поля токена пользователя, так что тут у меня Sessions
 * http://localhost:8000/rest_api/subscriber/lesson/list - уроки подписчика
-* [не реализовал] http://localhost:8000/rest_api/lesson/__ID__/subscription/check - проверка на наличие подписки
-* [не реализовал] http://localhost:8000/rest_api/lesson/__ID__/subscription/change - изменение подписки
+* http://localhost:8000/rest_api/lesson/1/subscription/check - проверка на наличие подписки
+* http://localhost:8000/rest_api/lesson/1/subscription/change - изменение статуса подписки
 
 Только для админа :
 * http://localhost:8000/rest_api/subscription/list - подписки всех на все 
