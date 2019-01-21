@@ -1,6 +1,6 @@
 <span class="img">
     <a href="{% url 'dist_learn_app:course_lessons' pk=course.id %}"><img width="50px"
-                                                                          src="/{{ course.main_image }}"
+                                                                          src="{{ MEDIA_PATH }}/{{ course.main_image }}"
                                                                           alt="{{ course.name }}"
                                                                           title="{{ course.name }}"></a>
 </span>
