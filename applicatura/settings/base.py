@@ -26,10 +26,10 @@ class Base(Configuration):
         'django.contrib.messages',
         'django.contrib.staticfiles',
 
-        'dist_learn_app',
-        'manage_app',
-        'user_app',
         'templates_app',
+        'manage_app',
+        'dist_learn_app',
+        'user_app',
 
         'rest_framework',
     ]
@@ -100,7 +100,6 @@ class Base(Configuration):
     MEDIA_DIR_NAME = 'media'
     MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_DIR_NAME)
     MEDIA_URL = 'http://127.0.0.1:8000/%s/' % MEDIA_DIR_NAME
-
 
 
 class BaseDev(Base):

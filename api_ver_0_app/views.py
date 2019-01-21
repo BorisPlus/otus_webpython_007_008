@@ -1,7 +1,7 @@
 from rest_framework import generics
 from rest_framework.response import Response
 from rest_framework.decorators import permission_classes
-from rest_framework.permissions import IsAuthenticated, AllowAny, IsAdminUser
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.views import APIView
 from rest_framework.decorators import api_view
 from django.contrib.auth import (
@@ -32,12 +32,6 @@ class CourseDetails(APIView):
         return Response(serializer.data)
 
 
-@permission_classes([IsAdminUser])
-class LessonList(generics.ListAPIView):
-    serializer_class = serializers.LessonDetailsSerializer
-    queryset = dist_learn_app_models.Lesson.objects.all()
-
-
 class LessonDetails(APIView):
     # TODO: переделать на generics CBV
     def get(self, request, *args, **kwargs):
@@ -47,7 +41,6 @@ class LessonDetails(APIView):
         return Response(serializer.data)
 
 
-@permission_classes([AllowAny])
 class CreateSubscriber(generics.CreateAPIView):
     serializer_class = serializers.SubscriberSerializer
 
@@ -59,7 +52,6 @@ class CreateSubscriber(generics.CreateAPIView):
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
-@permission_classes([AllowAny])
 class LoginSubscriber(APIView):
     serializer_class = serializers.SubscriberSerializer
 
@@ -138,6 +130,12 @@ class SubscriptionChange(APIView):
             return Response(data, status=status.HTTP_200_OK)
         except dist_learn_app_models.Lesson.DoesNotExist:
             return Response({'lesson_id_is_invalid': lesson_id}, status=status.HTTP_404_NOT_FOUND)
+
+
+@permission_classes([IsAdminUser])
+class LessonList(generics.ListAPIView):
+    serializer_class = serializers.LessonDetailsSerializer
+    queryset = dist_learn_app_models.Lesson.objects.all()
 
 
 @permission_classes([IsAdminUser])

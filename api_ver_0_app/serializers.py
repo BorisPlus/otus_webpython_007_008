@@ -5,26 +5,11 @@ from user_app import models as user_app_models
 
 
 class CourseSerializer(serializers.ModelSerializer):
-    main_image = serializers.SerializerMethodField()
 
     class Meta:
         model = dist_learn_app_models.Course
         fields = ('id', 'name', 'order', 'main_image', 'description')
         read_only_fields = ('id',)
-
-    def get_main_image(self, instance):
-        """
-        TODO: Мне бы хотелось иметь универсальный метод получения полного пути до картинки, независимо от
-        отработавшего приложения
-
-        Вариант:
-        # request = self.context.get('request')
-        # if not request:
-        #     return '%s' % instance.main_image
-        # return 'http://%s/%s' % (request.get_host(), instance.main_image)
-        не совершенен по причине того, что request может быть None
-        """
-        return '%s' % instance.main_image
 
 
 class LessonIdentitySerializer(serializers.ModelSerializer):
@@ -60,28 +45,16 @@ class CourseDetailsSerializer(CourseSerializer):
 
 
 class SubscriberSerializer(serializers.ModelSerializer):
-    token = serializers.SerializerMethodField()
     password = serializers.CharField(write_only=True, style={'input_type': 'password'})
-
-    def get_token(self, obj):
-        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
-        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
-
-        payload = jwt_payload_handler(obj)
-        token = jwt_encode_handler(payload)
-        return token
-
-    def create(self, validated_data):
-        password = validated_data.pop('password', None)
-        instance = self.Meta.model(**validated_data)
-        if password is not None:
-            instance.set_password(password)
-        instance.save()
-        return instance
 
     class Meta:
         model = user_app_models.Subscriber
-        fields = ('token', 'username', 'password')
+        fields = ('username', 'password')
+
+    def create(self, validated_data):
+        instance = self.Meta.model(**validated_data)
+        instance.save()
+        return instance
 
 
 class SubscriberSubscriptionsSerializer(SubscriberSerializer):
